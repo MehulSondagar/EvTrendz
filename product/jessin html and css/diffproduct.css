@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+/* *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} */
+
+.col-1{width: 8.3%;}
+.col-2{width: 16.6%;}
+.col-3{width: 25%;}
+.col-4{width: 33.3;}
+.col-5{width: 41.6%;}
+.col-6{width: 50%;}
+.col-7{width: 58.3%;}
+.col-8{width: 66.6%;}
+.col-9{width: 75%;}
+.col-10{width: 83.3%;}
+.col-11{width: 91.6%;}
+.col-12{width: 100%;}
+
+
+.mainconatiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+
+}
+
+.cardcontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.cardletter{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.cardbox{
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+    width: 300px;
+   border-radius: 0.5rem;
+   box-shadow:  0 3px 3px 0 lightgrey;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+.cardbox:hover,.cardbox:focus
+{   
+    box-shadow: 1px 20px 15px 0 lightgrey;
+}
+.cardtitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:40%;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.cardimg{
+    /* background-image: url("https://i.pinimg.com/originals/f9/90/86/f99086da30fd5fac7461a679f90675f7.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 100%;
+    width: 100%;
+
+}
+.cardimg1{
+    flex-direction: row;
+    /* background-image: url("https://www.napolebike.com/wp-content/uploads/2019/02/BAT-Green-Flou-1-1-300x240.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 100%;
+    width: 100%;
+}
+.cardtitle1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:40%;
+    text-align: center;
+}
+
+.cardimg2{
+    flex-direction: row;
+    /* background-image: url("https://key-components.toyota-industries.com/case/prozza/img/img01.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+@media only screen  and (max-width: 575px) {
+
+    .cardbox{
+        height: 50vh;
+        width: 75%;
+        margin: 40px 0px;
+    }
+    
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .cardbox{
+        height: 55vh;
+        width: 41.6%;
+        margin: 40px 0px;
+    }
+    
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+    .cardbox{
+        margin: 40px;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .cardbox{
+        height: 55vh;
+        width: 41.6%;
+        margin: 40px 0px;
+    }
+    
+}

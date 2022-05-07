@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+.col-1 {
+  width: 8.3%;
+}
+.col-2 {
+  width: 16.6%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.3;
+}
+.col-5 {
+  width: 41.6%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.3%;
+}
+.col-8 {
+  width: 66.6%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.3%;
+}
+.col-11 {
+  width: 91.6%;
+}
+.col-12 {
+  width: 100%;
+}
+
+.disccontainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.discwrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin:20px auto;
+}
+
+.model {
+  text-align: center;
+  font-size: 30px;
+  font-weight: medium;
+  color:black;
+}
+.discription {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+.disctitle {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.disccontent{
+  flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.columnstyle{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.new{
+  display: block;
+}
+
+.model-img{
+  max-width: 100%;
+}
+
+/* mobile responsive */
+@media only screen  and (max-width: 575px) {
+
+  .col-sm-12 {
+    width: 100%;
+  }
+.new{
+  display: inline;
+  margin-right: 8px;
+}
+  .discription {
+    flex-direction: column;
+  }
+  .columnstyle{
+    margin-bottom: 40px;
+  }
+
+}
+/* tablet responsive */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+  .col-sm-12 {
+    width: 100%;
+  }
+.new{
+  display: inline;
+  margin-right: 8px;
+}
+  .discription {
+    flex-direction: column;
+  }
+  .columnstyle{
+    margin-bottom: 40px;
+    align-items: center;
+  }
+  
+}
+
+/* laptop responsive */
+@media only screen and (min-width: 768px) {
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
